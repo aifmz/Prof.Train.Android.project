@@ -1,0 +1,240 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingBottom="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:gravity="start|top">
+
+            <FrameLayout
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/profileIconImageView"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/baseline_account_box_24" />
+            </FrameLayout>
+
+            <!-- Email and Username TextViews -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="30dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/profileEmailTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/profileUsernameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/appLogoImageView"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:src="@drawable/carlogo"
+            android:layout_marginBottom="20dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/car1ImageView"
+                android:layout_width="113dp"
+                android:layout_height="104dp"
+                android:contentDescription="Car 1 Image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tesla3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:id="@+id/car1NameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2020 Tesla Model 3"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/car1DetailsTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="Range: 353 miles | Price: $39,990"
+                    android:textColor="#CCCCCC"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/car1DetailsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#FF0000"
+                    android:text="More Details"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/car2ImageView"
+                android:layout_width="111dp"
+                android:layout_height="100dp"
+                android:contentDescription="Car 2 Image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bmwx5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:id="@+id/car2NameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2019 BMW X5"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/car2DetailsTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Engine: 3.0L | Price: $61,695"
+                    android:textColor="#CCCCCC"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp" />
+
+                <Button
+                    android:id="@+id/car2DetailsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="More Details"
+                    android:textColor="#FFFFFF"
+                    android:background="#FF0000"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/car3ImageView"
+                android:layout_width="111dp"
+                android:layout_height="90dp"
+                android:contentDescription="Car 3 Image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/fordmust" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:id="@+id/car3NameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2021 Ford Mustang"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/car3DetailsTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Horsepower: 450 HP | Price: $55,300"
+                    android:textColor="#CCCCCC"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp" />
+
+                <Button
+                    android:id="@+id/car3DetailsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="More Details"
+                    android:textColor="#FFFFFF"
+                    android:background="#FF0000"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:src="@drawable/baseline_airplanemode_active_24" />
+
+        <TextView
+            android:id="@+id/logoutText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="17sp"
+            />
+
+    </LinearLayout>
+</ScrollView>
+

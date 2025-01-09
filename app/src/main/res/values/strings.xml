@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Car Zone</string>
+    <string name="username_hint">Enter Your Username</string>
+    <string name="email_hint">Enter Your Email</string>
+    <string name="phone_hint">Enter Your Phone Number</string>
+    <string name="password_hint">Enter Your Password</string>
+    <string name="login_button_text">Log In</string>
+    <string name="signup_button_text">Sign Up</string>
+    <string name="login_button_description">Login Button</string>
+    <string name="sign_up_button_description">Sign Up Button</string>
+    <string name="login_title">Login</string>
+    <string name="main_title">Main Activity</string>
+</resources>

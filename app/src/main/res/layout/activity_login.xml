@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- Car Zone Logo -->
+    <ImageView
+        android:id="@+id/carlogoView"
+        android:layout_width="123dp"
+        android:layout_height="90dp"
+        android:src="@drawable/carlogo" />
+
+    <!-- Log In Text -->
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/carlogoView"
+        android:layout_margin="50dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="Log In"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FFFFFFFF"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <!-- Username Field -->
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#FFFFFF"
+        android:hint="@string/username_hint"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <!-- Password Field -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameEditText"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/password_hint"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:padding="10dp"
+        android:inputType="textPassword" />
+
+    <!-- Forgot Password Button -->
+    <TextView
+        android:id="@+id/forgotPasswordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Forgot Password?"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- Log In Button -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgotPasswordButton"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="50dp"
+        android:background="#FF0000"
+        android:contentDescription="@string/login_button_description"
+        android:text="@string/login_button_text"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <!-- Sign Up Button -->
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="20dp"
+        android:background="#FF0000"
+        android:text="@string/signup_button_text"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:contentDescription="@string/sign_up_button_description" />
+
+</RelativeLayout>

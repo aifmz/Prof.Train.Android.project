@@ -1,0 +1,7 @@
+<resources>
+    <!-- Custom Colors -->
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="navy_blue">#003366</color>
+    <color name="yellow">#FFCC00</color>
+</resources>

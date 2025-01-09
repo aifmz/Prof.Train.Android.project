@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.carzone">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.CarZone"> <activity
+        android:name=".SplashActivity"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.CarZone"  android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/login_title" android:exported="true" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/main_title" android:exported="true" />
+
+        <activity
+            android:name=".CarInfoActivity"
+            android:label="Car Info" android:exported="true" />
+
+        <activity
+            android:name=".SignUpActivity"
+            android:label="Sign Up"
+            android:exported="true" />
+
+    </application>
+
+</manifest>
